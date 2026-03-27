@@ -7,7 +7,7 @@
 use embassy_time::{Instant, Timer};
 use embassy_sync::channel::Channel;
 use rttp::PulseFrameHeader;
-use rpkid::watermark::verify_watermark;
+use rpki::watermark::verify_watermark;
 use zcmk::TokenMicro; 
 use aal::ActionAbstractionLayer;  // on-device collapse engine
 

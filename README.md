@@ -22,7 +22,7 @@ This is the exact layer powering real-world execution today: 1.2B+ trusted edge 
 
 | Traditional IoT Weakness          | Passive Silo / Cloud Latency       | GTIOT Countermeasure                          | Measured Gain                     |
 |-----------------------------------|------------------------------------|-----------------------------------------------|-----------------------------------|
-| Disconnected sensing              | Batch uploads, no AI reasoning     | Action-Collapse via AAL + on-device fusion   | <5 ms intent-to-action           |
+| Disconnected sensing              | Batch uploads, no AI reasoning     | Action-Collapse via AAL + on-device fusion   | <1 ms intent-to-action           |
 | No fail-safe                      | Blind execution                    | Shadow-State Sync with predictive rollback   | 100 % fail-safe autonomy         |
 | Physical hijacking                | Weak device auth                   | RPKI tensor watermark + hardware root-of-trust | Zero successful hijacks          |
 | Resource starvation               | No real-time economics             | ZCMK-embedded micro-payments in every pulse | 99.7 % edge utilization          |

@@ -1,3 +1,13 @@
+# 🧠 Aicent Stack: The Sovereign AI Nervous System
+
+ ⚪ **AICENT**  💎 **RTTP**  🔴 **RPKI**  🟢 **ZCMK**  🟡 **GTIOT** 
+ 
+<p align="left">
+  <code> 🛠️ Build: Passing </code> &nbsp; 
+  <code> 🦀 Language: Rust </code> &nbsp; 
+  <code> 🛡️ Status: EVOLVING </code>
+</p>
+
 # gtiot — The Body of Aicent Stack
 Embodied AI edge execution layer. High-frequency sensor fusion and Action-Collapse logic for Optimus-class hardware reflexes. 1.2 kHz loops.
 **Live Dissection: GTIOT.com — The Senses, Skeletal & Muscular System**  

@@ -2,13 +2,13 @@
 // Domain: GTIOT.com
 // Purpose: 1.2 kHz high-frequency sensory-motor loop & Action-Collapse logic.
 // Status: RFC-003 Draft.
-// gtiot-body/src/sensory_motor_loop.rs — the living limb core
+// gtiot/src/sensory_motor_loop.rs — the living limb core
 
 use embassy_time::{Instant, Timer};
 use embassy_sync::channel::Channel;
-use rttp_nerves::PulseFrameHeader;
-use rpki_immune::watermark::verify_watermark;
-use zcmk_blood::TokenMicro; 
+use rttp::PulseFrameHeader;
+use rpkid::watermark::verify_watermark;
+use zcmk::TokenMicro; 
 use aal::ActionAbstractionLayer;  // on-device collapse engine
 
 #[embassy_executor::task]

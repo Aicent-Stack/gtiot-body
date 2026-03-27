@@ -2,7 +2,7 @@
 // Domain: GTIOT.com
 // Purpose: 1.2 kHz high-frequency sensory-motor loop & Action-Collapse logic.
 // Status: RFC-003 Draft.
-// gtiot/src/sensory_motor_loop.rs — the living limb core
+// gtiot-body/src/sensory_motor_loop.rs — the living limb core
 use embassy_time::{Instant, Timer};
 use embassy_sync::channel::Channel;
 use rttp::PulseFrameHeader;

@@ -9,7 +9,7 @@
   <code> 🛡️ Status: EVOLVING </code>
 </p>
 
-![003](https://github.com/user-attachments/assets/946b620e-8bd0-4e6f-96be-b964a0df3358)
+![GTIOT](https://github.com/user-attachments/assets/99c9d02f-30c1-4b35-a49d-bf38bc05569f)
 
 Embodied AI edge execution layer. High-frequency sensor fusion and Action-Collapse logic for Optimus-class hardware reflexes. 1.2 kHz loops.
 **Live Dissection: GTIOT.com — The Senses, Skeletal & Muscular System**  

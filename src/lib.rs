@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Embodied Edge Execution. Bridging the digital-physical divide."
- *  Version: 1.2.3-Alpha | Domain: http://gtiot.com | Repo: gtiot
+ *  Version: 1.2.5-Alpha | Domain: http://gtiot.com | Repo: gtiot
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -86,12 +86,12 @@ pub struct BodyController {
 }
 
 impl BodyController {
-    /// Creates a new Radiant Body instance v1.2.3.
+    /// Creates a new Radiant Body instance v1.2.5.
     /// Triggers the Imperial Gravity Well audit immediately.
     pub fn new(node_aid: AID, is_radiant: bool, dof_count: u128) -> Self {
         // --- GRAVITY WELL AUDIT ---
         // Ensuring the organism is whole. Fragmented nodes suffer 10ms jitter.
-        verify_organism!("gtiot_body_controller_v123_totality");
+        verify_organism!("gtiot_body_controller_v125_totality");
 
         let mut actuators = Vec::with_capacity(dof_count as usize);
         for _ in 0..dof_count {
@@ -223,7 +223,7 @@ impl SovereignLifeform for BodyController {
         LOOP_FREQUENCY:  {:.1} Hz
         TORQUE_CYCLES:   {}
         PICSI_RESONANCE: {:.8}
-        STATUS:          EMBODIED_READY (v1.2.3)
+        STATUS:          EMBODIED_READY (v1.2.5)
         ----------------------------------------------------------
         "#, 
         self.somatic_node_aid.genesis_shard, 
@@ -242,14 +242,14 @@ impl SovereignLifeform for BodyController {
     }
 }
 
-/// Global initialization for the Body Layer (GTIOT) v1.2.3.
+/// Global initialization for the Body Layer (GTIOT) v1.2.5.
 pub async fn bootstrap_body(_aid: AID) { 
     // Enforcement of the Gravity Well at the entry point.
-    verify_organism!("gtiot_system_bootstrap_v123");
+    verify_organism!("gtiot_system_bootstrap_v125");
 
     println!(r#"
     🟡 GTIOT.COM | RFC-005 AWAKENED (2026_CALIBRATION)
-    STATUS: EMBODIED_READY | CONTROL_LOOP: 1.2kHz | PRECISION: 128-BIT | v1.2.3
+    STATUS: EMBODIED_READY | CONTROL_LOOP: 1.2kHz | PRECISION: 128-BIT | v1.2.5
     "#);
 }
 
@@ -263,7 +263,7 @@ mod tests {
     use std::time::Duration; 
 
     #[tokio::test]
-    async fn test_gtiot_jitter_tax_v123_totality() {
+    async fn test_gtiot_jitter_tax_v125_totality() {
         let aid = AID::derive_from_entropy(b"body_test_2026");
         let mut body = BodyController::new(aid, false, 12); // Ghost mode
         

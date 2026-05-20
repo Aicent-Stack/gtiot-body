@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "The Mirror of Matter. 128-bit state persistence in the Imperial Void."
- *  Version: 1.2.3-Alpha | Domain: http://gtiot.com
+ *  Version: 1.2.5-Alpha | Domain: http://gtiot.com
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -57,11 +57,11 @@ pub struct SomaticShadowEngine {
 }
 
 impl SomaticShadowEngine {
-    /// Creates a new Radiant Shadow Engine instance v1.2.3.
+    /// Creates a new Radiant Shadow Engine instance v1.2.5.
     /// Triggers the Imperial Gravity Well audit immediately.
     pub fn new(node_aid: AID, is_radiant: bool, initial_fused: FusedState_128) -> Self {
         // --- GRAVITY WELL AUDIT ---
-        verify_organism!("gtiot_shadow_engine_v123_purity");
+        verify_organism!("gtiot_shadow_engine_v125_purity");
 
         Self {
             local_node_aid: node_aid,
@@ -158,7 +158,7 @@ impl DigitalTwinSuture for SomaticShadowEngine {
     }
 }
 
-/// Global initialization for the GTIOT Shadow Engine v1.2.3.
+/// Global initialization for the GTIOT Shadow Engine v1.2.5.
 pub fn initialize_shadow_logic() {
     println!(r#"
     🟡 GTIOT.COM | SHADOW_ENGINE AWAKENED (2026)

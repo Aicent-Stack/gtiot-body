@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Merging high-frequency telemetry into a single sovereign truth."
- *  Version: 1.2.3-Alpha | Domain: http://gtiot.com
+ *  Version: 1.2.5-Alpha | Domain: http://gtiot.com
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -37,7 +37,7 @@ pub struct FusedState_128 {
 
 /// The GTIOT Sensory Fusion Engine.
 /// Responsible for cross-sensor correlation and noise liquidation.
-/// Maintains the 120Hz sensory refresh rate required for Imperial vision.
+/// Maintains the 1200Hz sensory refresh rate required for Imperial vision.
 pub struct SensoryFusionEngine {
     pub local_cortex_aid: AID,
     pub sensory_buffer: VecDeque<SensorTelemetry>,
@@ -47,7 +47,7 @@ pub struct SensoryFusionEngine {
 }
 
 impl SensoryFusionEngine {
-    /// Initializes a new v1.2.3-Alpha Fusion Engine.
+    /// Initializes a new v1.2.5-Alpha Fusion Engine.
     pub fn new(aid: AID) -> Self {
         Self {
             local_cortex_aid: aid,
@@ -144,12 +144,12 @@ impl PerceptionSuture for SensoryFusionEngine {
     }
 }
 
-/// Global initialization for the GTIOT Sensory Fusion v1.2.3.
+/// Global initialization for the GTIOT Sensory Fusion v1.2.5.
 pub fn initialize_fusion_logic() {
     println!(r#"
     🟡 GTIOT.COM | FUSION_ENGINE AWAKENED (2026)
     -------------------------------------------
     MODE: MULTIMODAL_SUTURE | PRECISION: 128-BIT
-    SENSORY_CADENCE: 120Hz | STATUS: RADIANT
+    SENSORY_CADENCE: 1200Hz | STATUS: RADIANT
     "#);
 }

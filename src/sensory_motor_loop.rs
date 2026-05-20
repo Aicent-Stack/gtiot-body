@@ -3,11 +3,11 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "The Grand Suture. Collapsing 128-bit intent into 1.2kHz physical reality."
- *  Version: 1.2.3-Alpha | Domain: http://gtiot.com
+ *  Version: 1.2.5-Alpha | Domain: http://gtiot.com
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
- *  REFLEX_ARC_TARGET: 183.292 µs | JITTER_TARGET: 12 ns.
+ *  REFLEX_ARC_TARGET: 161.862 µs | JITTER_TARGET: 12 ns.
  */
 
 use serde::{Deserialize, Serialize};
@@ -30,7 +30,7 @@ use crate::resonance::{ResonanceController};
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct LoopMetrics_128 {
     pub cycle_id_128: u128,           // IMPERIAL_128_BIT_CYCLE
-    pub total_reflex_latency_ns: u128, // Target: 183,292 ns
+    pub total_reflex_latency_ns: u128, // Target: 161.862 ns
     pub resonance_fidelity_f64: f64,  // Jitter-aligned stability
     pub picsi_radiance_score: f64,    // RFC-014 Context
     pub timestamp_ns_128: u128,       // 12ns jitter-aligned timestamp
@@ -55,12 +55,12 @@ pub struct SomaticLoopController {
 }
 
 impl SomaticLoopController {
-    /// Creates a new Radiant Somatic Loop instance v1.2.3.
+    /// Creates a new Radiant Somatic Loop instance v1.2.5.
     /// Triggers the Imperial Gravity Well audit immediately.
     pub fn new(node_aid: AID, is_radiant: bool, hs: HomeostasisScore) -> Self {
         // --- GRAVITY WELL AUDIT ---
         // Ensuring the organism is whole. Fragmented loops trigger 10ms ischemia.
-        verify_organism!("gtiot_somatic_loop_v123_totality");
+        verify_organism!("gtiot_somatic_loop_v125_totality");
 
         Self {
             local_node_aid: node_aid,
@@ -72,7 +72,7 @@ impl SomaticLoopController {
             resonance_gov: ResonanceController::new(node_aid, is_radiant),
             current_metrics: LoopMetrics_128 {
                 cycle_id_128: 0,
-                total_reflex_latency_ns: 183_292,
+                total_reflex_latency_ns: 161_862,
                 resonance_fidelity_f64: 1.0,
                 picsi_radiance_score: hs.picsi_resonance_idx,
                 timestamp_ns_128: Instant::now().elapsed().as_nanos() as u128,
@@ -153,12 +153,12 @@ impl SomaticSuture for SomaticLoopController {
     }
 }
 
-/// Global initialization for the GTIOT Somatic Loop v1.2.3.
+/// Global initialization for the GTIOT Somatic Loop v1.2.5.
 pub fn initialize_somatic_loop() {
     println!(r#"
     🟡 GTIOT.COM | SOMATIC_LOOP IGNITED (2026)
     ------------------------------------------
     MODE: GRAND_SUTURE | FREQUENCY: 1.2kHz
-    TARGET: 183.292us  | STATUS: RADIANT
+    TARGET: 161.862us  | STATUS: RADIANT
     "#);
 }

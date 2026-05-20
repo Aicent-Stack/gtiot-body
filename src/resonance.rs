@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Phase-locking the somatic loop to the 12ns Imperial heartbeat."
- *  Version: 1.2.3-Alpha | Domain: http://gtiot.com
+ *  Version: 1.2.5-Alpha | Domain: http://gtiot.com
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -55,11 +55,11 @@ pub struct ResonanceController {
 }
 
 impl ResonanceController {
-    /// Initializes a new v1.2.3-Alpha Resonance Engine.
+    /// Initializes a new v1.2.5-Alpha Resonance Engine.
     /// Triggers the Imperial Gravity Well audit immediately.
     pub fn new(aid: AID, is_radiant: bool) -> Self {
         // --- GRAVITY WELL AUDIT ---
-        verify_organism!("gtiot_resonance_orchestrator_v123");
+        verify_organism!("gtiot_resonance_orchestrator_v125");
 
         Self {
             local_node_aid: aid,
@@ -147,7 +147,7 @@ impl HarmonySuture for ResonanceController {
     }
 }
 
-/// Global initialization for the GTIOT Resonance Controller v1.2.3.
+/// Global initialization for the GTIOT Resonance Controller v1.2.5.
 pub fn initialize_resonance_logic() {
     println!(r#"
     🟡 GTIOT.COM | RESONANCE_ENGINE AWAKENED (2026)

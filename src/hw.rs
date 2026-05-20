@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Silicon Suture. Direct 128-bit mapping to the physical substrate."
- *  Version: 1.2.3-Alpha | Domain: http://gtiot.com
+ *  Version: 1.2.5-Alpha | Domain: http://gtiot.com
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -57,11 +57,11 @@ pub struct HardwareManifold {
 }
 
 impl HardwareManifold {
-    /// Initializes a new v1.2.3-Alpha Hardware Manifold.
+    /// Initializes a new v1.2.5-Alpha Hardware Manifold.
     /// Triggers the Imperial Gravity Well audit immediately.
     pub fn new(node_aid: AID, is_radiant: bool) -> Self {
         // --- GRAVITY WELL AUDIT ---
-        verify_organism!("gtiot_hardware_manifold_v123");
+        verify_organism!("gtiot_hardware_manifold_v125");
 
         Self {
             local_aid: node_aid,
@@ -143,7 +143,7 @@ impl SiliconSuture for HardwareManifold {
     }
 }
 
-/// Global initialization for the GTIOT Hardware HAL v1.2.3.
+/// Global initialization for the GTIOT Hardware HAL v1.2.5.
 pub fn initialize_hardware_hal() {
     println!(r#"
     🟡 GTIOT.COM | HAL_ENGINE AWAKENED (2026)

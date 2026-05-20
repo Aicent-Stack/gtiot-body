@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Where intent becomes torque. 128-bit kinematic mapping."
- *  Version: 1.2.3-Alpha | Domain: http://gtiot.com
+ *  Version: 1.2.5-Alpha | Domain: http://gtiot.com
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -35,7 +35,7 @@ pub struct AbstractAction_128 {
 
 /// The GTIOT Action Abstraction Engine.
 /// Responsible for sharding high-level brain intents into low-level torque pulses.
-/// It enforces the 183.292us reflex arc in the somatic manifold.
+/// It enforces the 161.862us reflex arc in the somatic manifold.
 pub struct ActionAbstractionEngine {
     pub local_body_aid: AID,
     pub max_torque_limit_nm: f64,     // Imperial Safety Guard
@@ -43,7 +43,7 @@ pub struct ActionAbstractionEngine {
 }
 
 impl ActionAbstractionEngine {
-    /// Initializes a new v1.2.3-Alpha AAL Engine.
+    /// Initializes a new v1.2.5-Alpha AAL Engine.
     pub fn new(aid: AID) -> Self {
         Self {
             local_body_aid: aid,
@@ -129,12 +129,12 @@ impl ActionSuture for ActionAbstractionEngine {
     }
 }
 
-/// Global initialization for the GTIOT Abstraction Layer v1.2.3.
+/// Global initialization for the GTIOT Abstraction Layer v1.2.5.
 pub fn initialize_aal_logic() {
     println!(r#"
     🟡 GTIOT.COM | AAL_ENGINE AWAKENED (2026)
     -----------------------------------------
     MODE: ACTION_COLLAPSE | PRECISION: 128-BIT
-    TARGET_REFLEX: 183.292us | STATUS: RADIANT
+    TARGET_REFLEX: 161.862us | STATUS: RADIANT
     "#);
 }

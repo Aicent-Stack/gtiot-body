@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Decoding neural intent into physical reality. Zero-latency interpretation."
- *  Version: 1.2.3-Alpha | Domain: http://gtiot.com
+ *  Version: 1.2.5-Alpha | Domain: http://gtiot.com
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -45,7 +45,7 @@ pub struct SutureMap {
 
 /// The GTIOT Pulse Interpreter.
 /// Responsible for zero-copy extraction of kinetic data from RTTP frames.
-/// Maintains the 183.292us reflex arc by optimizing decoding to < 10us.
+/// Maintains the 161.862us reflex arc by optimizing decoding to < 10us.
 pub struct PulseInterpreter {
     pub local_somatic_aid: AID,
     pub master_shunter: SovereignShunter,
@@ -55,11 +55,11 @@ pub struct PulseInterpreter {
 }
 
 impl PulseInterpreter {
-    /// Initializes a new v1.2.3-Alpha Interpreter instance.
+    /// Initializes a new v1.2.5-Alpha Interpreter instance.
     /// Triggers the Imperial Gravity Well audit immediately.
     pub fn new(aid: AID, is_radiant: bool) -> Self {
         // --- GRAVITY WELL AUDIT ---
-        verify_organism!("gtiot_pulse_interpreter_v123");
+        verify_organism!("gtiot_pulse_interpreter_v125");
 
         Self {
             local_somatic_aid: aid,
@@ -89,7 +89,7 @@ impl PulseInterpreter {
         }
 
         // 3. Logic Collapse: Translating 128-bit Payload
-        // In the v1.2.3 full-blood version, we deserialize the command directly 
+        // In the v1.2.5 full-blood version, we deserialize the command directly 
         // from the RTTP payload vector.
         let command: KineticCommand = serde_json::from_slice(&frame.pulse_payload_vec)
             .map_err(|e| format!("PARSER_ERROR: Payload corruption: {}", e))?;
@@ -150,7 +150,7 @@ impl InterpretationSuture for PulseInterpreter {
     }
 }
 
-/// Global initialization for the GTIOT Pulse Interpreter v1.2.3.
+/// Global initialization for the GTIOT Pulse Interpreter v1.2.5.
 pub fn initialize_parser_logic() {
     println!(r#"
     🟡 GTIOT.COM | PARSER_ENGINE AWAKENED (2026)

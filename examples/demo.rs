@@ -3,7 +3,7 @@
  *  (C) 2026 Aicent Stack Technical Committee. All Rights Reserved.
  *
  *  "Demonstrating 1.2kHz Somatic Control and 128-Bit Torque Fidelity."
- *  Version: 1.2.3-Alpha | Domain: http://gtiot.com | Repo: gtiot
+ *  Version: 1.2.5-Alpha | Domain: http://gtiot.com | Repo: gtiot
  *
  *  IMPERIAL_STANDARD: ABSOLUTE 128-BIT NUMERIC PURITY ENABLED.
  *  SOVEREIGN_GRAVITY_WELL: MANDATORY INDIVISIBILITY PROTOCOL ENABLED.
@@ -24,11 +24,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     
     // Enforcement of the Gravity Well
     // Standalone execution demonstrates the 10ms Mechanical Jitter tax.
-    verify_organism!("gtiot_embodied_example_v123");
+    verify_organism!("gtiot_embodied_example_v125");
     bootstrap_body(node_aid).await;
 
     // 2. Initialize the Body Controller (12-DOF Framework)
-    // Radiant Mode enabled to showcase the 183.292us reflex arc.
+    // Radiant Mode enabled to showcase the 161.862us reflex arc.
     let is_radiant = true;
     let dof_count = 12u128; // IMPERIAL_128_BIT_DOF
     let mut body = BodyController::new(node_aid, is_radiant, dof_count);
@@ -62,7 +62,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("          Precision: 0.01 Nm (128-bit fidelity)");
 
     // 5. Simulate Haptic Telemetry Ingestion
-    // Demonstrating the 120Hz sensor feedback stream.
+    // Demonstrating the 1200Hz sensor feedback stream.
     let telemetry = SensorTelemetry {
         sensor_id_128: [0x55; 16],
         reading_value_f64: 0.0098,        // Real-time pressure reading
